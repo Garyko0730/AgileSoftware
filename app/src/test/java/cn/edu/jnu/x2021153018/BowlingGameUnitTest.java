@@ -26,7 +26,6 @@ public class BowlingGameUnitTest {
     }
     @Test
     public void test20Ones()  {
-
         repeatedRoll(1,20);
         assertEquals(20,game.score());
     }
