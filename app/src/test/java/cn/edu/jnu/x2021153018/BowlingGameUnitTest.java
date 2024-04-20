@@ -43,10 +43,11 @@ public class BowlingGameUnitTest {
     public void testAStrike()
     {
         rollAStrike();
-        game.roll(3);
-        game.roll(4);
-        repeatedRoll(0,16);
-        assertEquals(24,game.score());
+        game.roll(10);
+        game.roll(1);
+        game.roll(1);
+        repeatedRoll(0,14);
+        assertEquals(35,game.score());
     }
 
     private void rollAStrike() {
